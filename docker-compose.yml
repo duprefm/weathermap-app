@@ -1,0 +1,8 @@
+services:
+  weathermap-manual:
+    build: .
+    image: weathermap-manual:latest
+    container_name: weathermap-manual
+    ports:
+      - "8081:8080"
+    restart: unless-stopped
